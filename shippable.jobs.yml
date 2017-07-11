@@ -15,7 +15,7 @@ jobs:
       - IN: hourly-trigger
       - TASK:
         - script: ./IN/repo-trigger/gitRepo/test.sh
-    on_failure:
-      - script: echo "AUTOMATION FAILED"
-      - NOTIFY: email-notification
+    on_success: always
+      - NOTIFY: slack-notification
+    on_failure: always
       - NOTIFY: slack-notification
