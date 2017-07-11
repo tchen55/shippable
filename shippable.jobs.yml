@@ -13,5 +13,5 @@ jobs:
       - IN: shippable_runCI
       - IN: nightly-trigger
       - TASK:
-        - script: ls
+        - script: ls -al IN
         - script: ./test.sh
