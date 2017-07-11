@@ -7,3 +7,9 @@ jobs:
       - script: echo 'on success !!!!!'
     on_failure:
       - script: echo 'Failed job .... :('
+  - name: shippable_runSh
+    type: runSh
+    steps:
+      - IN: nightly-trigger
+      - TASK:
+        - script: echo 'test script'
