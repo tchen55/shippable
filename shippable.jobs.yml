@@ -18,3 +18,4 @@ jobs:
     on_failure:
       - script: echo "AUTOMATION FAILED"
       - NOTIFY: email-notification
+      - NOTIFY: slack-notification

@@ -15,3 +15,9 @@ resources:
       method: email
       recipients:
         - "tchen@bespokemetrics.com"
+  - name: slack-notification
+    type: notification
+    integration: SlackAutomationNotification
+    pointer:
+      recipients:
+        - "#shippable-testing"
