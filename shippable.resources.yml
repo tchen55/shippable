@@ -7,5 +7,5 @@ resources:
     type: gitRepo
     integration: syncRepo
     pointer:
-      SourceName: tchen55/shippable
+      sourceName: tchen55/shippable
       branch: master
