@@ -10,7 +10,7 @@ jobs:
   - name: shippable_runSh
     type: runSh
     steps:
-      - IN: shippable_runSh
+      - IN: shippable_runCI
       - IN: nightly-trigger
       - TASK:
         - script: ls
