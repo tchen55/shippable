@@ -2,7 +2,7 @@ jobs:
   - name: shippable_runCI
     type: runCI
     steps:
-      - IN: nightly-trigger
+      - IN: shippable_ciRepo
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
