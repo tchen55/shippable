@@ -15,7 +15,7 @@ jobs:
       - IN: hourly-trigger
       - TASK:
         - script: ./IN/repo-trigger/gitRepo/test.sh
-    on_success: always
+    on_success:
       - NOTIFY: slack-notification
-    on_failure: always
+    on_failure:
       - NOTIFY: slack-notification
