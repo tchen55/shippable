@@ -5,7 +5,7 @@ resources:
       interval: "0 */1 * * *"
   - name: repo-trigger
     type: gitRepo
-    integration: syncRepo
+    integration: sync
     pointer:
       sourceName: tchen55/shippable
       branch: master
