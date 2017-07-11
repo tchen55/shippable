@@ -1,13 +1,13 @@
 jobs:
-  - name: shippable_runCI
+  - name: shippable_CI
     type: runCI
     steps:
       - IN: shippable_ciRepo
     on_success:
-      - script: echo 'on success !!!!!'
+      - NOTIFY: slack-notification
     on_failure:
-      - script: echo 'Failed job .... :('
-  - name: shippable_runSh
+      - NOTIFY: slack-notification
+  - name: shippable_authomation
     type: runSh
     steps:
       - IN: repo-trigger
