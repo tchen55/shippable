@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo 'test test test test'
+rm "api_test.txt" 2> /dev/null
 
-echo 'exiting'
-exit 100
+echo "auth_api DOWN" >> "api_test.txt"
+
+echo "auth_api DOWN" >> "api_test.txt"
+
+[ -e api_test.txt ] && exit 1

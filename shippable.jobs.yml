@@ -14,7 +14,7 @@ jobs:
         switch: off
       - IN: hourly-trigger
       - TASK:
-        - script: ls -al IN/repo-trigger/gitRepo
         - script: ./IN/repo-trigger/gitRepo/test.sh
     on_failure:
+      - script: echo "AUTOMATION FAILED"
       - NOTIFY: email-notification
