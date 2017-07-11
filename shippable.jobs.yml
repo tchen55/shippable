@@ -1,5 +1,5 @@
 jobs:
-  - name: shippable_CI
+  - name: shippable_runCI
     type: runCI
     steps:
       - IN: shippable_ciRepo
@@ -7,7 +7,7 @@ jobs:
       - NOTIFY: slack-notification
     on_failure:
       - NOTIFY: slack-notification
-  - name: shippable_authomation
+  - name: automation_runSh
     type: runSh
     steps:
       - IN: repo-trigger
