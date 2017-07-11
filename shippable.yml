@@ -3,3 +3,12 @@ language: none
 build:
   ci:
     - echo "RUNNING CI"
+
+integrations:
+  notifications:
+    - integrationName: SlackAutomationNotification
+      type: slack
+      recipients:
+        - "#shippable-testing"
+      on_success: always
+      on_failure: always

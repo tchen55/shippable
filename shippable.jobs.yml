@@ -3,10 +3,6 @@ jobs:
     type: runCI
     steps:
       - IN: shippable_ciRepo
-    on_success:
-      - NOTIFY: slack-notification
-    on_failure:
-      - NOTIFY: slack-notification
   - name: automation_runSh
     type: runSh
     steps:
