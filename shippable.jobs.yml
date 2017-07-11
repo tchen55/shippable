@@ -10,8 +10,8 @@ jobs:
   - name: shippable_runSh
     type: runSh
     steps:
-      - IN: shippable_runCI
-      - IN: nightly-trigger
+      - IN: repo-trigger
+      - IN: hourly-trigger
       - TASK:
-        - script: ls -al IN
+        - script: ls -al IN/shippable_runCI
         - script: ./test.sh

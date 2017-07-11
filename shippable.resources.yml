@@ -1,5 +1,11 @@
 resources:
-  - name: nightly-trigger
+  - name: hourly-trigger
     type: time
     seed:
       interval: "0 */1 * * *"
+  - name: repo-trigger
+    type: gitRepo
+    integration: GitHub
+    pointer:
+      SourceName: tchen55/shippable
+      branch: master
