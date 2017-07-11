@@ -12,4 +12,5 @@ jobs:
     steps:
       - IN: nightly-trigger
       - TASK:
+        - script: ls
         - script: ./test.sh
