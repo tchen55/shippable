@@ -3,7 +3,6 @@ jobs:
     type: runCI
     steps:
       - IN: shippable_ciRepo
-      - OUT: shippable_runSh
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
@@ -11,6 +10,7 @@ jobs:
   - name: shippable_runSh
     type: runSh
     steps:
+      - IN: shippable_runSh
       - IN: nightly-trigger
       - TASK:
         - script: ls
