@@ -16,3 +16,5 @@ jobs:
       - TASK:
         - script: ls -al IN/repo-trigger/gitRepo
         - script: ./IN/repo-trigger/gitRepo/test.sh
+    on_failure:
+      - NOTIFY: email-notification

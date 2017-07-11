@@ -9,3 +9,9 @@ resources:
     pointer:
       sourceName: tchen55/shippable
       branch: master
+  - name: email-notification
+    type: notification
+    pointer:
+      method: email
+      recipients:
+        - "tchen@bespokemetrics.com"
