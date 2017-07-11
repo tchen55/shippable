@@ -13,5 +13,5 @@ jobs:
       - IN: repo-trigger
       - IN: hourly-trigger
       - TASK:
-        - script: ls -al IN/shippable_runCI
+        - script: ls
         - script: ./test.sh
