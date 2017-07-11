@@ -11,7 +11,8 @@ jobs:
     type: runSh
     steps:
       - IN: repo-trigger
+        switch: off
       - IN: hourly-trigger
       - TASK:
-        - script: ls
+        - script: ls -al IN/repo-trigger
         - script: ./test.sh
