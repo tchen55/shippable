@@ -3,6 +3,7 @@ jobs:
     type: runCI
     steps:
       - IN: shippable_ciRepo
+      - OUT: shippable_runSh
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
