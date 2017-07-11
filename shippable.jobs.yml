@@ -14,5 +14,5 @@ jobs:
         switch: off
       - IN: hourly-trigger
       - TASK:
-        - script: ls -al IN/repo-trigger
-        - script: ./test.sh
+        - script: ls -al IN/repo-trigger/gitRepo
+        - script: ./IN/repo-trigger/gitRepo/test.sh
